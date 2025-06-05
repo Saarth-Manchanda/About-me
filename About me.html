@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Saarth Manchanda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #181c2b 0%, #232946 100%);
+      color: #f5f6fa;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: rgba(36, 40, 59, 0.85);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 8px 32px 0 rgba(20, 24, 41, 0.7);
+      padding: 2.5rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .profile-pic {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 50%;
+      border: 5px solid #232946;
+      box-shadow: 0 8px 20px rgba(40,40,60,0.6);
+      transition: transform 0.3s ease;
+      background: #232946;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05) rotate(5deg);
+      box-shadow: 0 12px 28px rgba(40,40,60,0.8);
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 12px rgba(20,24,41,0.6);
+      color: #ffe066;
+    }
+
+    .intro h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: #c7c7c7;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #e0e0e0;
+      letter-spacing: 0.01em;
+    }
+
+    .skills {
+      margin-top: 2rem;
+    }
+
+    .skills h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffe066;
+      text-shadow: 1px 1px 3px rgba(20,24,41,0.4);
+    }
+
+    .skill-list {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: linear-gradient(90deg, #232946 60%, #ffe066 100%);
+      color: #181c2b;
+      padding: 0.5rem 1.1rem;
+      border-radius: 30px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(255, 224, 102, 0.08);
+      transition: background 0.3s, color 0.3s;
+      cursor: default;
+      user-select: none;
+      border: 1px solid #ffe06644;
+    }
+
+    .skill:hover {
+      background: linear-gradient(90deg, #ffe066 70%, #232946 100%);
+      color: #232946;
+      box-shadow: 0 6px 18px rgba(255, 224, 102, 0.2);
+    }
+
+    .contact {
+      margin-top: 3rem;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: #f0f0f0;
+    }
+
+    .contact h3 {
+      color: #ffe066;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .contact a {
+      color: #ffe066;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+      word-break: break-all;
+    }
+
+    .contact a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+      }
+
+      .profile-pic {
+        margin: 0 auto;
+        max-width: 160px;
+      }
+
+      .intro h1 {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      .intro h2,
+      .intro p {
+        text-align: center;
+      }
+
+      .skills {
+        text-align: center;
+      }
+
+      .skill-list {
+        justify-content: center;
+      }
+
+      .contact {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img
+      src="https://cdn.create.vista.com/api/media/medium/470947676/stock-vector-alien-pixelated-shape-digital-game-yellow-glowing-neon-icon?token="
+      alt="Saarth Manchanda"
+      class="profile-pic"
+    />
+    <div class="intro">
+      <h1>Saarth Manchanda</h1>
+      <h2>Student and Curious Coder</h2>
+      <p>
+        Hi! I'm Saarth, a passionate developer who loves crafting beautiful and
+        functional websites and applications. With 1 year of experience
+        in web development, I specialize in Python, HTML 5 and some level of github.
+        I enjoy turning ideas into reality through clean code and creative solutions.
+       Currently I am working on a website for a imaginary company called 'Failure Corporations' using flask in python.
+      </p>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skill-list">
+          <span class="skill">Python</span>
+          <span class="skill">HTML5</span>
+          <span class="skill">HTML5</span>
+          <span class="skill">Git & GitHub</span>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h3>Contact Me</h3>
+        <a href="mailto:saarth.munch@gmail.com">saarth.munch@gmail.com</a>
+        <a href="https://github.com/Saarth-Manchanda" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
